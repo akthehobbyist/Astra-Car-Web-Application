@@ -1,0 +1,296 @@
+<!doctype html>
+<!--   
+ Filename: Exercise 3.
+Template Author: Google (http://www.getmdl.io/templates/text-only/index.html).
+Edited by : Nitinkumar Jaiswal
+Course Name: Programming Language Research Project
+Course Number: CST8333
+Lab	Sec #: 350
+Professors Name: Stanley Pieda.
+Date: November 2, 2015
+Purpose of program: First prototype
+ 
+-->
+<html lang="en" ng-app="angularjsApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Angular Js fuel logger</title>
+
+
+    <!-- AngularJs javascript  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div ng-controller="firstController">
+        <div class="container">
+            <h3>ASTRA</h3>
+			<h4>Motors Inc</h4>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#purchaser">Purchaser Information</a></li>
+                <li><a data-toggle="tab" href="#vehicleinformation">Vehicle Information</a></li>
+                <li><a data-toggle="tab" href="#vehicleInsuranceInformation">Insurance Information</a></li>
+                <li><a data-toggle="tab" href="#vehicleTradeInInformation">Vehicle Trade In</a></li>
+                <li><a data-toggle="tab" href="#thirdpartyWarranty">Third Party Warranty</a></li>
+
+            </ul>
+
+            <!-- firstcontroller as controller  -->
+
+
+            <div class="tab-content">
+
+                <div id="purchaser" class="tab-pane fade in active">
+
+                    <div class="row">
+                        <div class="form-group col-lg-3">
+                            <label>First Name</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label>Middle Name</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label>Last Name</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-9">
+                            <label>Address</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-5">
+                            <label>City</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>Province</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>Postal Code</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-lg-3">
+                            <label>Home Tel </label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label>Work Tel</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label>Mobile</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-6">
+                            <label>Driving Licence # </label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label>Expiry Date</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+                <div id="vehicleinformation" class="tab-pane fade">
+
+                    <div class="row">
+                        <div class="form-group col-lg-6">
+                            <label>Vehicle Identification Number</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label>Previous Use</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-2">
+                            <label>Year</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>Make</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>Model</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>EXT Trim</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-5">
+                            <label>Distance Travelled</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>Color</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>MTO Brand</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div id="vehicleInsuranceInformation" class="tab-pane fade">
+
+                    <div class="row">
+                        <div class="form-group col-lg-4">
+                            <label>Name Of Insurance Company</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-5">
+                            <label>Policy#</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-4">
+                            <label>Brokers name</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-5">
+                            <label>Tel#</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+
+                    </div>
+                </div>
+				
+				
+                <div id="vehicleTradeInInformation" class="tab-pane fade">
+
+                    <div class="row">
+                        <div class="form-group col-lg-6">
+                            <label>Vehicle Identification Number</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label>Previous Use</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-2">
+                            <label>Year</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>Make</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>Model</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>EXT Trim</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-5">
+                            <label>Distance Travelled</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>Color</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label>MTO Brand</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+                    </div>
+
+
+
+                </div>
+				
+				<div id="thirdpartyWarranty" class="tab-pane fade">
+
+                    <div class="row">
+                        <div class="form-group col-lg-3">
+                            <div class="form-group">
+  <label for="sel1">Third Party Warranty</label>
+  <select class="form-control" id="sel1">
+    <option>Yes</option>
+    <option>No</option>
+    
+  </select>
+</div>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>Company Name</label>
+                            <input type="" name="" class="form-control" id="" value="">
+                        </div>
+
+                    </div>
+					 <div class="row">
+                        <div class="form-group col-lg-3">
+						<label>Months</label>
+                            <input type="" name="" class="form-control" id="" value="">
+						</div>
+						<div class="form-group col-lg-3">
+						<label>Kms</label>
+                            <input type="" name="" class="form-control" id="" value="">
+						</div>
+						<div class="form-group col-lg-3">
+						<label>Claim</label>
+                            <input type="" name="" class="form-control" id="" value="">
+						</div>
+					
+					</div>
+					<div class="row">
+                        <div class="form-group col-lg-9"> 
+						<label>Description</label>
+                            <input type="" name="" class="form-control" id="" value="">
+							</div>
+					</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- user defined and required js files-->
+       <script src="app/app.js"></script>
+
+</body>
+
+</html>
